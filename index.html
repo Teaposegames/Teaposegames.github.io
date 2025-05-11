@@ -20,7 +20,7 @@
     .hero {
       position: relative;
       width: 100%;
-      height: 75vh;
+      height: 65vh;
       background-image: url('https://wallpapercave.com/wp/wp7110645.jpg');
       background-size: cover;
       background-position: center;
@@ -76,7 +76,6 @@
 
     .game-title {
       position: absolute;
-       margin-bottom: 35px;
       top: -30px; /* Yüksekliği artırarak, galerinin üst kısmına yerleştirdim */
       left: 50%;
       transform: translateX(-50%);
@@ -85,6 +84,16 @@
       text-shadow: 2px 2px 10px #000;
       color: white;
     }
+
+    .box {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.spacer {
+  height: 30px;  /* Buradaki yüksekliği istediğiniz kadar değiştirebilirsiniz */
+}
   </style>
 </head>
 <body>
@@ -96,8 +105,9 @@
   <div class="gallery-wrapper">
     <!-- "Did You Try Our Games?" başlığını buraya ekledim -->
     <div class="game-title">Did You Try Our Games?</div>
-  </br>
-    </br>
+<div class="box">İlk Div</div>
+<div class="spacer"></div>  <!-- Araya boşluk eklemek için boş bir div -->
+<div class="box">İkinci Div</div>
     
     <div class="gallery">
       <a href="https://oyunkontrol.itch.io/brothers-kebab-saloon" target="_blank">
