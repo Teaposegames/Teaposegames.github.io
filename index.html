@@ -20,10 +20,11 @@
     .hero {
       position: relative;
       width: 100%;
-      height: 25vh;
-      background-image: url('https://c1.wallpaperflare.com/preview/171/852/28/keyboard-coffee-desk-monitor.jpg');
+      height: 35vh; /* Banner yüksekliği artırıldı */
+      background-image: url('https://dikxrpw3rdepo.cloudfront.net/wp-content/uploads/2021/12/screens_bs1_7.jpg');
       background-size: cover;
       background-position: center;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url('https://c1.wallpaperflare.com/preview/171/852/28/keyboard-coffee-desk-monitor.jpg');
     }
 
     .hero-text {
@@ -53,11 +54,23 @@
       border-radius: 10px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      position: relative;
     }
 
     .gallery a img:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px #fff;
+    }
+
+    .gallery a .game-text {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #000;
+      color: white;
     }
   </style>
 </head>
@@ -68,9 +81,18 @@
   </div>
 
   <div class="gallery">
-    <a href="https://oyunkontrol.itch.io/brothers-kebab-saloon" target="_blank"><img src="https://img.itch.zone/aW1nLzIwNzUyNDMxLnBuZw==/315x250%23c/QDFG6%2B.png" alt="Game 1"></a>
-    <a href="https://oyunkontrol.itch.io/cargo-game" target="_blank"><img src="https://img.itch.zone/aW1nLzE5NDAwNjY0LnBuZw==/315x250%23c/t4Q9cA.png" alt="Game 2"></a>
-    <a href="https://oyunkontrol.itch.io/hide-and-seek-a-terrible-child-story" target="_blank"><img src="https://img.itch.zone/aW1nLzE4NDY5MjA1LnBuZw==/315x250%23c/0aauQP.png" alt="Game 3"></a>
+    <a href="https://oyunkontrol.itch.io/brothers-kebab-saloon" target="_blank">
+      <div class="game-text">Did You Try Other Games?</div>
+      <img src="https://img.itch.zone/aW1nLzIwNzUyNDMxLnBuZw==/315x250%23c/QDFG6%2B.png" alt="Game 1">
+    </a>
+    <a href="https://oyunkontrol.itch.io/cargo-game" target="_blank">
+      <div class="game-text">Did You Try Other Games?</div>
+      <img src="https://img.itch.zone/aW1nLzE5NDAwNjY0LnBuZw==/315x250%23c/t4Q9cA.png" alt="Game 2">
+    </a>
+    <a href="https://oyunkontrol.itch.io/hide-and-seek-a-terrible-child-story" target="_blank">
+      <div class="game-text">Did You Try Other Games?</div>
+      <img src="https://img.itch.zone/aW1nLzE4NDY5MjA1LnBuZw==/315x250%23c/0aauQP.png" alt="Game 3">
+    </a>
   </div>
 
 </body>
